@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -7,27 +8,24 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
               <span className="text-white font-bold text-sm">AL</span>
             </div>
             <span className="font-semibold text-lg">Agentic Learning Labs</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link to="/resources" className="text-sm font-medium hover:text-primary transition-colors">
               Resources
-            </a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
+            </Link>
+            <Link to="/tips" className="text-sm font-medium hover:text-primary transition-colors">
               Tips
-            </a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
+            </Link>
+            <Link to="/about" className="text-sm font-medium hover:text-primary transition-colors">
               About
-            </a>
-            <Button size="sm" variant="default">
-              Get Started
-            </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

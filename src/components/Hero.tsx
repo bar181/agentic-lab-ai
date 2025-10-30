@@ -43,11 +43,11 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button size="lg" variant="hero" className="text-lg px-8 py-6">
-              Explore Resources
+            <Button size="lg" variant="hero" className="text-lg px-8 py-6" asChild>
+              <a href="/resources">Explore Resources</a>
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6">
-              Get Started
+            <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
+              <a href="/tips">View Tips</a>
             </Button>
           </div>
         </div>
