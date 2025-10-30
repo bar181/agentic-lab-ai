@@ -1,42 +1,24 @@
 import { Card } from "@/components/ui/card";
-import { Brain, Zap, Target, Sparkles, Code, Rocket } from "lucide-react";
+import { BarChart3, Users, TrendingUp } from "lucide-react";
 
-const tips = [
+const courses = [
   {
-    icon: Brain,
-    title: "Understanding Agent Behavior",
-    description: "Learn how AI agents make decisions and process information in complex environments.",
-    category: "Foundations"
+    icon: BarChart3,
+    title: "AI for Data Analytics & Decision Making",
+    description: "Learn to leverage AI tools for analyzing data, generating insights, and making informed business decisions. Master practical techniques for working with data in your everyday role.",
+    category: "4-Week Course"
   },
   {
-    icon: Zap,
-    title: "Optimization Techniques",
-    description: "Master advanced strategies for improving agent performance and efficiency.",
-    category: "Performance"
+    icon: Users,
+    title: "AI for Customer Experience & Product Innovation",
+    description: "Discover how to use AI to enhance customer interactions, streamline product development, and drive innovation. Build skills that help you deliver better experiences and outcomes.",
+    category: "4-Week Course"
   },
   {
-    icon: Target,
-    title: "Goal-Oriented Design",
-    description: "Discover how to architect agents that effectively pursue and achieve objectives.",
-    category: "Architecture"
-  },
-  {
-    icon: Sparkles,
-    title: "Prompt Engineering",
-    description: "Craft precise prompts that unlock the full potential of your AI agents.",
-    category: "Best Practices"
-  },
-  {
-    icon: Code,
-    title: "Implementation Patterns",
-    description: "Explore proven code patterns and structures for building robust agents.",
-    category: "Development"
-  },
-  {
-    icon: Rocket,
-    title: "Scaling Strategies",
-    description: "Learn techniques for deploying and scaling agents in production environments.",
-    category: "Deployment"
+    icon: TrendingUp,
+    title: "AI for Sales, Marketing & Business Development",
+    description: "Master AI workflows for sales enablement, marketing campaigns, and business growth. Learn to craft effective prompts and integrate AI into your daily business activities.",
+    category: "4-Week Course"
   }
 ];
 
@@ -47,17 +29,17 @@ const TipsGrid = () => {
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">
-            Essential Insights
+            Our Courses
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Curated knowledge to accelerate your journey with AI agents
+            Gain real-world, practical AI skills that help you stand out, get hired, or move up in your career
           </p>
         </div>
 
-        {/* Tips Grid */}
+        {/* Courses Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {tips.map((tip, index) => {
-            const Icon = tip.icon;
+          {courses.map((course, index) => {
+            const Icon = course.icon;
             return (
               <Card 
                 key={index}
@@ -65,7 +47,7 @@ const TipsGrid = () => {
               >
                 {/* Category Badge */}
                 <div className="text-xs font-medium text-primary mb-4 uppercase tracking-wider">
-                  {tip.category}
+                  {course.category}
                 </div>
 
                 {/* Icon */}
@@ -75,10 +57,10 @@ const TipsGrid = () => {
 
                 {/* Content */}
                 <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
-                  {tip.title}
+                  {course.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  {tip.description}
+                  {course.description}
                 </p>
               </Card>
             );

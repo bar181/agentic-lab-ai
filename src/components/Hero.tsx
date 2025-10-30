@@ -25,7 +25,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass animate-fade-in">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">AI-Powered Learning</span>
+            <span className="text-sm font-medium">Practical AI Skills for Career Growth</span>
           </div>
 
           {/* Heading */}
@@ -38,17 +38,20 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Your comprehensive toolkit for mastering AI agents with curated tips, 
-            best practices, and cutting-edge insights.
+            Learn AI. Get hired. Get promoted.
+          </p>
+          
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Master practical AI skills in just four weeks. Learn to use AI tools and workflows that solve real business problems—from data analysis to customer experience to sales and marketing. Stand out in a competitive job market with hands-on expertise employers are looking for.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button size="lg" variant="hero" className="text-lg px-8 py-6" asChild>
-              <Link to="/resources">Explore Resources</Link>
+              <Link to="/tips">View Course Resources</Link>
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
-              <Link to="/tips">View Tips</Link>
+              <Link to="/about">Learn More</Link>
             </Button>
           </div>
         </div>
