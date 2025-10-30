@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Brain, Lightbulb } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -44,10 +45,10 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button size="lg" variant="hero" className="text-lg px-8 py-6" asChild>
-              <a href="/resources">Explore Resources</a>
+              <Link to="/resources">Explore Resources</Link>
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
-              <a href="/tips">View Tips</a>
+              <Link to="/tips">View Tips</Link>
             </Button>
           </div>
         </div>
